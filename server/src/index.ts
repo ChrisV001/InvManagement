@@ -5,6 +5,9 @@ import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
 import dashboardRoutes from "./routes/dashboardRoutes";
+import productRoutes from "./routes/productRoutes";
+import userRoutes from "./routes/userRoutes";
+import expenseRoutes from "./routes/expenseRoutes";
 
 /* configs */
 dotenv.config();
@@ -18,7 +21,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 /* route imports */
-app.use("/dashboard", dashboardRoutes);
+app.use("/dashboard", dashboardRoutes); //localhost:8000/dashboard
+app.use("/products", productRoutes); //localhost:8000/products
+app.use("/users", userRoutes); //localhost:8000/users
+app.use("/expenses", expenseRoutes); //localhost:8000/expenses
 
 //SERVER
 const port = process.env.port || 3001;
