@@ -23,7 +23,7 @@ https://main.d2f4cbhcksnc6r.amplifyapp.com/dashboard
 - AWS services for deployment:
 - API Gateway to handle incoming HTTP requests.
 - EC2 to host the Node/Express backend.
-- AWS Amplify for hosting and continuous deployment of the Next.js frontend (optional, but possible).
+- AWS Amplify for hosting and continuous deployment of the Next.js frontend.
 - RDS (Relational Database Service) for managing the database.
 
 ## Installation & Setup
